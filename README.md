@@ -1,35 +1,46 @@
-# DMart – Java Swing Shopping System
+# DMart – Java Swing Shopping System 🛒
 
-DMart is a desktop shopping application built using Java Swing. It provides a simple, interactive interface for users to simulate shopping in a supermarket, add items to a cart, select delivery schedules, choose payment methods, and generate a detailed bill.
+DMart is a **Java Swing desktop shopping application** that simulates a supermarket experience. Users can register, browse categories and subcategories, add items to a cart, choose payment and delivery options, and generate a detailed bill.  
+
+All product data (categories, subcategories, items, and prices) are stored in the **`DMartDatabase`** class for easy management and expansion.
 
 ---
 
 ## Features
-- User registration with personal details and address.
-- Category and subcategory selection for shopping items.
-- Add multiple items to the shopping cart with quantity selection.
-- Cart verification and total price calculation.
-- Payment and delivery selection options.
-- Detailed bill generation with all purchased items.
+- **User Registration:** Enter personal details, contact info, and address.
+- **Category & Subcategory Selection:** Browse items efficiently.
+- **Cart Management:** Add multiple items, select quantities, and view totals.
+- **Payment & Delivery Options:** Choose payment method and delivery schedule.
+- **Bill Generation:** View a detailed order summary with timestamps.
+- **Easy Data Management:** Product lists and prices are stored in `DMartDatabase.java`.
 
 ---
 
-## Future Improvements
-- Improved payment and billing panels for better user experience.
-- Integration with `javax.print` to print bills directly.
-- Additional features like discount codes, loyalty points, and digital receipts.
+## Installation & Running the Program
+1. Copy the project folder to your computer.
+2. Make sure the **`dMartData` package** with `DMartDatabase.java` is included.
+3. Open the project in your Java IDE (IntelliJ IDEA, Eclipse, NetBeans, etc.).
+4. Compile all Java files.
+5. Run the main class (the class that launches the application).
+
+---
+
+## Usage
+1. Start the application and register your details.
+2. Browse categories and subcategories, select items, and add them to your cart.
+3. Check your cart and proceed to payment.
+4. Generate your bill to view the complete order summary.
 
 ---
 
 ## Technologies Used
-- Java SE 11+
+- Java SE
 - Java Swing for GUI
-- CardLayout, GridLayout, and BorderLayout for panel management
-- `LocalDate` and `LocalTime` for real-time order timestamps
+- Layouts: `BorderLayout`, `GridLayout`, `CardLayout`
+- `dMartData.DMartDatabase` for managing product data
+- `LocalDate` & `LocalTime` for timestamps
 
 ---
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/DMart.git
+## Author
+**Aaryan Tibrewal** – Developer & Project Designer
