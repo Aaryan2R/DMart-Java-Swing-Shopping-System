@@ -25,6 +25,97 @@ public class DMartDatabase {
         {"Rakhi Items", "Diwali Gifts", "Fairy Lights", "Decorations", "New Year Specials"}
     };
 
+    // Add these to dMartData.DMartDatabase
+public static String[] states = {
+    // 28 states
+    "Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa",
+    "Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka","Kerala",
+    "Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland",
+    "Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura",
+    "Uttar Pradesh","Uttarakhand","West Bengal",
+    // 8 Union Territories (keep them after states)
+    "Andaman & Nicobar Islands","Chandigarh","Dadra and Nagar Haveli & Daman & Diu",
+    "Delhi (NCT)","Jammu & Kashmir","Ladakh","Lakshadweep","Puducherry"
+};
+
+public static String[][] cities = {
+    // Andhra Pradesh
+    {"Visakhapatnam","Vijayawada","Guntur","Nellore","Kurnool","Tirupati","Kakinada","Anantapur","Kadapa","Amaravati"},
+    // Arunachal Pradesh
+    {"Itanagar","Tawang","Pasighat","Ziro","Bomdila","Naharlagun"},
+    // Assam
+    {"Guwahati","Dibrugarh","Silchar","Jorhat","Tezpur","Nagaon","Bongaigaon","Tinsukia"},
+    // Bihar
+    {"Patna","Gaya","Bhagalpur","Muzaffarpur","Purnia","Darbhanga","Begusarai","Buxar"},
+    // Chhattisgarh
+    {"Raipur","Bilaspur","Durg","Korba","Raigarh","Jagdalpur","Bhilai","Ambikapur"},
+    // Goa
+    {"Panaji","Margao","Vasco da Gama","Mapusa","Ponda"},
+    // Gujarat
+    {"Ahmedabad","Surat","Vadodara","Rajkot","Bhavnagar","Jamnagar","Gandhinagar","Anand","Vapi","Porbandar"},
+    // Haryana
+    {"Gurugram","Faridabad","Panipat","Ambala","Hisar","Karnal","Yamunanagar","Rohtak"},
+    // Himachal Pradesh
+    {"Shimla","Dharamshala","Solan","Mandi","Kullu","Hamirpur","Kangra"},
+    // Jharkhand
+    {"Ranchi","Jamshedpur","Dhanbad","Bokaro","Deoghar","Hazaribagh","Giridih","Medininagar"},
+    // Karnataka
+    {"Bengaluru","Mysuru","Mangalore","Hubli-Dharwad","Belagavi","Ballari","Shimoga","Davangere","Tumakuru","Udupi"},
+    // Kerala
+    {"Thiruvananthapuram","Kochi","Kozhikode","Thrissur","Alappuzha","Kollam","Kottayam","Kannur","Malappuram"},
+    // Madhya Pradesh
+    {"Bhopal","Indore","Jabalpur","Gwalior","Ujjain","Sagar","Satna","Rewa","Ratlam","Dewas"},
+    // Maharashtra
+    {"Mumbai","Pune","Nagpur","Nashik","Thane","Aurangabad","Solapur","Kolhapur","Nanded","Amravati"},
+    // Manipur
+    {"Imphal","Churachandpur","Thoubal","Senapati","Ukhrul"},
+    // Meghalaya
+    {"Shillong","Tura","Jowai","Nongpoh"},
+    // Mizoram
+    {"Aizawl","Lunglei","Kolasib","Champhai"},
+    // Nagaland
+    {"Kohima","Dimapur","Mokokchung","Tuensang"},
+    // Odisha
+    {"Bhubaneswar","Cuttack","Rourkela","Berhampur","Sambalpur","Puri","Balasore","Bhadrak"},
+    // Punjab
+    {"Amritsar","Ludhiana","Jalandhar","Patiala","Bathinda","Mohali","Hoshiarpur","Pathankot"},
+    // Rajasthan
+    {"Jaipur","Jodhpur","Udaipur","Ajmer","Bikaner","Kota","Alwar","Sikar","Sawai Madhopur"},
+    // Sikkim
+    {"Gangtok","Namchi","Gyalshing","Mangan"},
+    // Tamil Nadu
+    {"Chennai","Coimbatore","Madurai","Tiruchirappalli","Salem","Tirunelveli","Vellore","Erode","Thoothukudi","Kanchipuram"},
+    // Telangana
+    {"Hyderabad","Warangal","Nizamabad","Khammam","Karimnagar","Ramagundam","Mahbubnagar","Siddipet"},
+    // Tripura
+    {"Agartala","Udaipur","Dharmanagar","Kailasahar"},
+    // Uttar Pradesh
+    {"Lucknow","Kanpur","Varanasi","Agra","Meerut","Ghaziabad","Noida","Prayagraj","Gorakhpur","Bareilly","Moradabad","Aligarh"},
+    // Uttarakhand
+    {"Dehradun","Haridwar","Roorkee","Nainital","Haldwani","Rishikesh","Kashipur"},
+    // West Bengal
+    {"Kolkata","Howrah","Durgapur","Siliguri","Asansol","Kalyani","Bardhaman","Kharagpur"},
+
+    // Union Territories
+    // Andaman & Nicobar Islands
+    {"Port Blair","Neil Island","Havelock Island"},
+    // Chandigarh
+    {"Chandigarh"},
+    // Dadra and Nagar Haveli & Daman & Diu
+    {"Daman","Diu","Silvassa"},
+    // Delhi (NCT)
+    {"New Delhi","Connaught Place","Saket","Dwarka","Rohini","Noida (NCR)"},
+    // Jammu & Kashmir
+    {"Srinagar","Jammu","Anantnag","Baramulla","Kupwara"},
+    // Ladakh
+    {"Leh","Kargil"},
+    // Lakshadweep
+    {"Kavaratti","Agatti"},
+    // Puducherry
+    {"Puducherry","Karaikal","Mahe","Yanam"}
+};
+
+
     public static String[][][] item = {
         { // Groceries
             {"Rice", "Wheat", "Toor Dal", "Chana Dal", "Sugar"},
