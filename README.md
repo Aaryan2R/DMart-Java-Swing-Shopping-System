@@ -1,73 +1,69 @@
-🛒 DMart – Java Swing Shopping System
+# 🛒 DMart – Java Swing Shopping System  
 
-DMart is a Java Swing desktop shopping application that simulates a real supermarket experience.
-Users can register, browse categories and subcategories, add items to a cart, choose payment and delivery options, and generate a detailed bill — all within a sleek desktop interface.
+DMart is a **Java Swing desktop shopping application** that simulates a real supermarket experience.  
+Users can register, browse product categories, add items to their cart, make payments, and generate a detailed bill with live order tracking.
 
-✨ Features
+---
 
-User Registration – Capture personal details, contact info, and delivery address.
+## 🚀 Features
+- 🧍 **User Registration & Profile Editing**
+  - Collects name, contact, address, gender, and age.
+  - Validates all fields (email format, name alphabets-only, phone digits, etc.)
+  - Option to edit profile later.
 
-Dynamic Categories & Subcategories – Organized browsing with fast switching.
+- 🛍️ **Shopping Experience**
+  - Organized **categories** and **subcategories** of products.
+  - Select quantity, view live subtotal, and add to cart.
+  - Persistent cart data even after switching between panels.
 
-Cart Management – Add, remove, and update item quantities with real-time totals.
+- 🧾 **Cart Management**
+  - Add, remove, or update quantities directly in the cart.
+  - “Clear Selection” button resets only unadded items, not the cart.
+  - Dynamic total calculation across all categories.
 
-Smart Payment Panel – Choose from Card, UPI, Net Banking, Wallet, or COD with proper input validation.
+- 💳 **Payment & Delivery**
+  - Multiple payment methods: Card, UPI, Net Banking, Wallet, Cash on Delivery.
+  - Card validation with masked card number in bill.
+  - Smart delivery system with random ETA between 10–30 minutes.
 
-Delivery Scheduler – Randomized delivery times (10–30 mins) with live countdown tracking.
+- 📦 **Bill Generation & Order History**
+  - Auto-generated Order ID with timestamp.
+  - Displays delivery ETA and countdown timer.
+  - All previous orders are stored and viewable in “Order History”.
+  - Option to print bill using `javax.print`.
 
-Bill & Order History – Generate detailed bills and revisit previous orders anytime.
+- 🌙 **Dark Mode**
+  - Fully applied theme across all panels, buttons, and components.
 
-Dark Mode – Modern, eye-friendly theme with full UI coverage.
+- ⚙️ **Robust Exception Handling**
+  - Input validation for all registration fields.
+  - Prevents UI–data desynchronization issues.
 
-Data Handling – All products, subcategories, and pricing stored in DMartDatabase.java.
+---
 
-🧠 Current Issue / Collaboration Needed
+## 🧠 Known Issue / Collaboration Request
+There’s currently a **state synchronization issue**:  
+> When switching between categories and pressing the “Clear” button, totals reset incorrectly across panels even if items are still in the cart.
 
-⚠️ Issue:
-When switching between categories or subcategories, pressing the Clear Selection button incorrectly resets totals and quantities even for items already present in the cart.
-This is a state synchronization bug between the shopping panel and the shared cart data.
+If you’d like to **collaborate or help fix this**, feel free to fork the repo or open a pull request!  
+You can also create an issue titled:
+> “Cart state desynchronization when clearing items across categories”
 
-🧩 Looking For:
-Contributors who can help fix this UI–data desynchronization issue by improving how the cart and category panels sync their item states.
+and describe your approach to fixing it.
 
-If you’d like to collaborate, feel free to fork the repository, create a pull request, or open an issue with your proposed fix or debugging approach.
+---
 
-⚙️ Installation & Running
+## 🧩 Technologies Used
+- **Java SE 21**
+- **Swing (JFrame, JPanel, JButton, JLabel, etc.)**
+- **Layouts:** `BorderLayout`, `GridLayout`, `CardLayout`
+- **Timer & Threading:** for live order countdown
+- **Data Handling:** `DMartDatabase.java` for product and pricing data
+- **Printing:** `javax.print` API for bill printing
 
-Clone or download this repository.
+---
 
-git clone https://github.com/Aaryan2R/DMart-Java-Swing-Shopping-System.git
-
-
-Ensure the dMartData package (containing DMartDatabase.java) is included.
-
-Open the project in your preferred Java IDE (IntelliJ IDEA, Eclipse, or VS Code).
-
-Compile all Java files.
-
-javac DMart.java
-
-
-Run the application:
-
-java DMart
-
-💻 Technologies Used
-
-Language: Java SE
-
-GUI Framework: Java Swing
-
-Layouts: BorderLayout, GridLayout, CardLayout
-
-Database: dMartData.DMartDatabase (static arrays)
-
-Time Handling: LocalDateTime and DateTimeFormatter
-
-🧑‍💻 Author
-
-Aaryan Tibrewal
-Developer & Project Designer
-📍 Malad West, Mumbai
-📧 [YourEmailHere@gmail.com
-] (optional)
+## ⚙️ Installation & Running
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Aaryan2R/DMart-Java-Swing-Shopping-System.git
